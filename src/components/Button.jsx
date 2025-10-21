@@ -1,6 +1,4 @@
-import React from 'react'
-
-const Button = ({classname,id,text}) => {
+const Button = ({classname,text}) => {
   return (
     <a className={`${classname ?? ""} cta-wrapper`} href="">
         <div className="cta-button group">
