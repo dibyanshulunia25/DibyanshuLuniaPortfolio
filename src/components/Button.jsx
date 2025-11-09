@@ -1,6 +1,20 @@
-const Button = ({classname,text}) => {
+const Button = ({classname,text,id}) => {
   return (
-    <a className={`${classname ?? ""} cta-wrapper`} href="">
+    <a
+    onClick={(e)=>{
+      e.preventDefault();
+      const target = document.getElementById('counter')
+
+      if(target && id){
+        const offset = window.innerHeight * 0.15;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({
+          top,
+          behavior: 'smooth'
+        });
+      }
+    }}
+    className={`${classname ?? ""} cta-wrapper`} href="">
         <div className="cta-button group">
             <div className="bg-circle"/>
                 <p className="text">{text}</p>
