@@ -6,6 +6,7 @@ import FeatureCards from './sections/FeatureCards'
 import ExperienceSection from './sections/ExperienceSection'
 import TechStackSection from './sections/TechStackSection'
 import { TestimonialSection } from './sections/TestimonialSection'
+import { Contact } from './sections/Contact'
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
             <ExperienceSection />
             <TechStackSection />
             <TestimonialSection />
+            <Contact />
         </>
     )
 }
