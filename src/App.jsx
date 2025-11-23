@@ -7,6 +7,7 @@ import ExperienceSection from './sections/ExperienceSection'
 import TechStackSection from './sections/TechStackSection'
 import { TestimonialSection } from './sections/TestimonialSection'
 import { Contact } from './sections/Contact'
+import Footer from './sections/Footer'
 
 const App = () => {
     return (
@@ -20,6 +21,7 @@ const App = () => {
             <TechStackSection />
             <TestimonialSection />
             <Contact />
+            <Footer />
         </>
     )
 }
