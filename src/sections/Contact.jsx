@@ -1,13 +1,18 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import TitleHeader from '../components/TitleHeader'
 import ContactExperience from '../components/ContactExperience'
+import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
+    const formRef = useRef(null);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: '',
     })
+
+    const [loading, setLoading] = useState(false);
+
 
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -17,13 +22,29 @@ export const Contact = () => {
         }))
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        setFormData(() => ({
-            name: '',
-            email: '',
-            message: '',
-        }))
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+        try {
+            setLoading(true);
+            await emailjs.sendForm(
+                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+                formRef.current,
+                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+            )
+            setFormData(() => ({
+                name: '',
+                email: '',
+                message: '',
+            }))
+        } catch (error) {
+            console.error('Error sending email:', error);
+        }
+        finally {
+            setLoading(false);
+        }
+
     }
 
     return (
@@ -34,7 +55,7 @@ export const Contact = () => {
                     {/* contact form left side */}
                     <div className="xl:col-span-5">
                         <div className="flex-center card-border rounded-xl p-10">
-                            <form className="w-full text-left" onSubmit={handleSubmit}>
+                            <form className="w-full text-left" onSubmit={handleSubmit} ref={formRef}>
                                 <label htmlFor="name">Name</label>
                                 <input
                                     type="text"
@@ -68,10 +89,10 @@ export const Contact = () => {
                                     value={formData.message}
                                     onChange={handleChange}
                                 ></textarea>
-                                <button type="submit" className='w-full'>
+                                <button type="submit" className='w-full' disabled={loading}>
                                     <div className="cta-button group">
                                         <div className="bg-circle" />
-                                        <p className='text'>Send Message</p>
+                                        <p className='text'>{loading ? 'Sending...' : 'Send Message'}</p>
                                         <div className='arrow-wrapper'>
                                             <img src="/images/arrow-down.svg" alt="arrow" />
                                         </div>
