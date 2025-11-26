@@ -43,27 +43,27 @@ const Showcase = () => {
                     {/* left */}
                     <div className="first-project-wrapper" ref={project1Ref}>
                         <div className='image-wrapper'>
-                            <img src="/images/project1.png" alt="Ryde" />
+                            <img src="/images/project1.png" alt="CycloSell" />
                         </div>
                         <div className="text-content">
-                            <h2>Lorem ipsum dolor sit amet consectetur !</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores molestiae sunt ipsum eligendi exercitationem illo quae! Natus tempora quas alias?</p>
+                            <h2>CycloSell, Perfect Choice for wholesellers to display their stock</h2>
+                            <p>This is a full stack cycle showcase website designed for B2B startups. This website allows business owners (Cycle Wholesellers) to show the cycles they have and can get orders online with no physical visit.</p>
                         </div>
                     </div>
                     {/* right */}
                     <div className="project-list-wrapper overflow-hidden">
                         <div className="project" ref={project2Ref}>
                             <div className="image-wrapper bg-[#ffefdb]">
-                                <img src="/images/project2.png" alt="..." />
+                                <img src="/images/project2.png" alt="Airbnd" />
                             </div>
-                            <h2>Library Management System</h2>
+                            <h2>Airbnd(Airbnb clone)</h2>
 
                         </div>
                         <div className="project" ref={project3Ref}>
                             <div className="image-wrapper bg-[#ffe7eb]">
-                                <img src="/images/project3.png" alt="..." />
+                                <img src="/images/project3.png" alt="Ecom king" />
                             </div>
-                            <h2>Startup Showacase</h2>
+                            <h2>FOREVER (Ecom King)</h2>
 
                         </div>
                     </div>
