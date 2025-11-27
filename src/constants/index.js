@@ -125,14 +125,14 @@ const techStackIcons = [
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
-  
+
   {
     name: "MongoDB",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
-  
+
   {
     name: "Git",
     modelPath: "/models/git-svg-transformed.glb",
@@ -247,7 +247,7 @@ const testimonials = [
 const socialImgs = [
   {
     name: "github",
-    url: "https://www.facebook.com/",
+    url: "https://github.com/dibyanshulunia25",
     imgPath: "/images/github.png",
   },
   {
@@ -257,7 +257,7 @@ const socialImgs = [
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/in/dibyanshu-lunia-421b782a2",
     imgPath: "/images/linkedin.png",
   },
 ];
