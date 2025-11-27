@@ -148,41 +148,42 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "Dibyanshu brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+      "CycloSell is a cutting-edge full-stack e-commerce platform tailored for the B2B cycle industry. Designed to empower wholesalers and startups, it features a responsive React-based frontend for seamless user interactions and a robust Node.js backend for handling complex inventory management, real-time stock tracking, and secure transactions.",
     imgPath: "/images/project1.png",
-    logoPath: "/images/seo.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
-    responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+    logoPath: "/images/MERN.png",
+    title: "CycloSell",
+    date: "January 2025 - January 2025",
+    features: [
+      "A full-stack cycle showcase website for B2B startups.",
+      "Used React for frontend development and Node.js for backend services.",
+      "Optimized web applications for wholesellers to display their stock efficiently.",
     ],
   },
   {
     review:
-      "Dibyanshu’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+      "Airbnd (Airbnb clone) is a comprehensive full-stack web application that replicates the core functionalities of the popular Airbnb platform. Built with React on the frontend and Node.js on the backend, it allows users to search, book, and list properties with ease. The application features a user-friendly interface, secure authentication, and efficient data management to provide a seamless experience for both hosts and guests.",
     imgPath: "/images/project2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+    logoPath: "/images/MERN.png",
+    title: "Airbnd",
+    date: "May-2025",
+    features: [
+      "Airbnd (Airbnb clone) full stack web application using React and Node.js.",
+      "2nd year Practice project to strengthen my full stack development skills.",
+      "Similar to airbnb, users can search, book, and list properties.",
     ],
   },
   {
     review:
-      "Dibyanshu’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+      "FOREVER (Ecom King) is a dynamic full-stack e-commerce platform designed to revolutionize the online clothing shopping experience. Developed using React for the frontend and Node.js for the backend, FOREVER offers a seamless and intuitive interface for users to browse, select, and purchase clothing items. The platform features robust product management, secure payment processing, and an efficient admin panel for managing products, orders, and user accounts, ensuring a smooth shopping experience for customers and streamlined operations for administrators.",
     imgPath: "/images/project3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+    logoPath: "/images/MERN.png",
+    title: "FOREVER(Ecom King)",
+    date: "August 2025 - Present",
+    features: [
+      "Developed and maintained the FOREVER (Ecom King) web application using React and NodeJS backend services.",
+      "A full stack e-commerce platform designed to provide a seamless clothes shopping experience.",
+      "Implemented responsive design principles to ensure optimal user experience across various devices.",
+      "Working on Admin panel for managing products, orders, and user accounts efficiently.",
     ],
   },
 ];

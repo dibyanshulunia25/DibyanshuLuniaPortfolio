@@ -10,8 +10,8 @@ export const TestimonialSection = () => {
                 <TitleHeader title="What people say about me?" sub="⭐ Client Feedbacks" />
 
                 <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
-                    {testimonials.map(({ imgPath, name, mentions, review }) => (
-                        <GlowCard card={{ review }}>
+                    {testimonials.map(({ imgPath, name, mentions, review }, index) => (
+                        <GlowCard card={{ review }} showStars={true} index={index}>
                             <div className="flex items-center gap-3">
                                 <div>
                                     <img src={imgPath} alt={name} />

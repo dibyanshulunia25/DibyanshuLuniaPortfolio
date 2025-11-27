@@ -91,10 +91,10 @@ const ExperienceSection = () => {
                                                     🗓️{card.date}
                                                 </p>
                                                 <p className='text-[#839cb5] italic'>
-                                                    Responsiblities
+                                                    About My Project
                                                 </p>
                                                 <ul className='list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50'>
-                                                    {card.responsibilities.map((resp) => (
+                                                    {card.features.map((resp) => (
                                                         <li key={resp} className='text-lg'>{resp}</li>
                                                     ))}
                                                 </ul>
