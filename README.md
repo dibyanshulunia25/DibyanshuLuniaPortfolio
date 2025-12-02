@@ -27,7 +27,6 @@ A modern single-page portfolio built with Vite + React, styled with Tailwind CSS
 - vite.config.js — Vite configuration
 - eslint.config.js — ESLint configuration
 
-(If you don't see some of these files locally, fetch the repository or check your branch.)
 
 ## Prerequisites
 - Node.js (recommended >= 16.8, Node 18+ suggested)
@@ -71,13 +70,6 @@ The project uses `@emailjs/browser`. To make the contact form work in production
 - Create an EmailJS account and service/template.
 - Add your EmailJS user ID, service ID, and template ID into the appropriate environment or config file (do not commit secrets).
 - For local testing you can use environment variables or a .env file (Vite supports VITE_ prefixed env variables).
-
-## Recommendations & checklist before publishing
-- Add a LICENSE file if this repo should be open-source.
-- Add CODEOWNERS or CONTRIBUTING.md if you expect collaborators.
-- Remove any hard-coded API keys or credentials. Use environment variables.
-- Optimize and compress 3D assets (GLTF/GLB) if used; prefer streaming or lazy-loading heavy models.
-- Add a proper live demo link (Vercel, Netlify, or GitHub Pages) in the badges/heading.
 
 ## Deployment
 This repository builds into a static site (Vite). Common hosts:
