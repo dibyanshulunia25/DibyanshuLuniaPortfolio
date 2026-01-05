@@ -257,7 +257,7 @@ const socialImgs = [
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/in/dibyanshu-lunia-421b782a2",
+    url: "https://www.linkedin.com/in/dibyanshu-lunia",
     imgPath: "/images/linkedin.png",
   },
 ];
