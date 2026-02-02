@@ -1,21 +1,29 @@
+const resumeLink = "/Dibyanshu_Lunia_Resume_2.pdf";
+
 const navLinks = [
   {
     name: "Work",
     link: "#work",
   },
   {
-    name: "Experience",
-    link: "#experience",
+    name: "Projects",
+    link: "#project",
   },
   {
     name: "Skills",
     link: "#skills",
   },
+  // {
+  //   name: "Testimonials",
+  //   link: "#testimonials",
+  // },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Resume",
+    link: resumeLink,
   },
 ];
+
+
 
 const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
@@ -142,6 +150,19 @@ const techStackIcons = [
 ];
 
 const expCards = [
+  {
+    review:
+      "Interview Mate is a premier full-stack interview preparation platform that leverages artificial intelligence to simulate realistic interview scenarios. It empowers users to practice effectively with tailored questions, ensuring they are fully prepared for professional assessments.",
+    imgPath: "/images/project4.png",
+    logoPath: "/images/MERN.png",
+    title: "Interview Mate",
+    date: "November 2025 - December 2025",
+    features: [
+      "Generates intelligent, context-aware interview questions to provide a comprehensive practice environment for technical and behavioral skills.",
+      "Facilitates a realistic simulation of professional interviews, allowing users to refine their responses and build confidence.",
+      "Delivers a robust and responsive user experience through a modern full-stack architecture.",
+    ],
+  },
   {
     review:
       "CycloSell is a cutting-edge full-stack e-commerce platform tailored for the B2B cycle industry. Designed to empower wholesalers and startups, it features a responsive React-based frontend for seamless user interactions and a robust Node.js backend for handling complex inventory management, real-time stock tracking, and secure transactions.",

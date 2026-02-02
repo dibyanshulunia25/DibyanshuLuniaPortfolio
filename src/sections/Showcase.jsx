@@ -68,7 +68,15 @@ const Showcase = () => {
                         </div>
                     </div>
 
-
+                </div>
+                <div className="first-project-wrapper w-full mt-4 " ref={project1Ref}>
+                    <div className='image-wrapper'>
+                        <img src="/images/project4.png" alt="InterviewMate" />
+                    </div>
+                    <div className="text-content">
+                        <h2>InterviewMate, Perfect Choice for Interview Preparation</h2>
+                        <p>This is a full stack interview preparation platform designed for students and professionals. This website allows users to practice for interviews with AI-powered mock interviews and get personalized feedback.</p>
+                    </div>
                 </div>
             </div>
         </section>
